@@ -1,0 +1,21 @@
+.container {
+    padding-top: 5px;
+}
+.row {
+    margin-bottom: 3px;
+}
+.detailed-car-image {
+    height: 200px;
+}
+.col-md-8 {
+    padding-top: 3px;
+}
+.col-md-7 {
+    padding-top: 48px;
+}
+.btn-outline-success {
+    margin-left: 3px;
+}
+.list-group-item {
+    cursor: pointer;
+}

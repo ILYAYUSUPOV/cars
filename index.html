@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>VueJS</title>
+</head>
+<body>
+<div class ="container" id="app">
+    <div class="row">
+        <div class="col">
+            <h1>Cars Application</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="search">Find your car</label>
+                <input type="text" class="form-control" id="search" placeholder="Name , model ...">
+            </div>
+            <hr>
+            <ul class="list-group">
+                <li v-for="car in cars"class="list-group-item list-group-item-action pointer">
+                    {{ car.name }} - {{ car.model }}
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>Ford</h2>
+                    <img src="image/fordfocus.jpg" alt="" class="rounded detailed-car-image">
+                </div>
+                <div class="col-md-7">
+                    <h5>Car details</h5>
+                    <ul>
+                        <li>Model - <strong>Focus</strong></li>
+                        <li>Year - <strong>2015</strong></li>
+                        <li>Owner - <strong>Dima</strong></li>
+                    </ul>
+                    <p>+7 921 123 45 67</p>
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn btn-outline-success">Show phone</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
